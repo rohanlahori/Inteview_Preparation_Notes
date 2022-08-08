@@ -1,0 +1,3 @@
+Stack:
+
+Next Greater Element
