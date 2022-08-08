@@ -5,8 +5,8 @@ Next Greater Element
   
   Pseudo Code:
   
-  while(s.top()<=cur){
-  s.pop();
-  }
-  cout<<s.top();
-  s.push(cur)
+   while(s.top()<=cur){ '\n'
+   s.pop();
+   }
+   cout<<s.top();
+   s.push(cur)
