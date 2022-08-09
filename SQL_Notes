@@ -1,0 +1,101 @@
+Suppose the name of the database is ROHAN.
+
+Dbms key is an attribute or a set of attribute which helps to uniquely identif a record or a row of data in table.
+Used to establish relation between tables and identify relationship between tables.
+
+Types of keys:
+	1 Super Key: attribute or a set of attribute which can be used to identify record or a set of records is known as super key.
+	2 Candidate Key: It is a minimal set of super key.
+	3 Primary Key: It is a candidate key which is used to identify the data in the table
+	4 Foreign Key: It is an attribute which is used to identify relationship of the table with some another table maintans data integriy.
+	5 Composite Key: Any key with one or more attribute is known as composite key.
+	6 Compound key: if a composite key has a attribute which is foreign key than it is compound key.
+	7 surrogate key : if the table does not have any attribute which can uniquely identify the data than a key is formed which is known as surrogate key.
+
+Create Database 
+	CREATE DATABASE ROHAN;
+
+DELETE Database
+	DROP DATABASE ROHAN;
+
+Use a particular database
+	USE ROHAN;
+		(name of the database)
+
+Create Table
+	CREATE TABLE test
+	(
+		test_column INT
+	);
+
+	Inside the bracket it is the name of the column along with it's datatypes.
+
+
+Alter Table
+	ALTER TABLE test
+	ADD another_column VARCHAR(255) NOT NULL;
+
+Order by - sort the data 
+	Select * from Customer ORDER BY COUNTRY ASC | DSC
+
+
+
+Basics:
+
+
+SELECT TOP number|percent column_name(s)
+FROM table_name
+WHERE condition;
+
+
+COUNT() Syntax
+
+SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;
+
+Unique Names :
+	Select Distinct name from albums;
+	(Add DISTINCT)
+
+
+The SQL LIKE Operator
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a%';
+
+
+Select all records where the first letter of the City is an "a" or a "c" or an "s".
+
+
+SELECT * FROM Customers
+WHERE City LIKE '[acs]%';
+
+Select all records where the first letter of the City starts with anything from an "a" to an "f".
+
+
+SELECT * FROM Customers
+WHERE City LIKE '[a-f]%';
+
+Select all records where the first letter of the City is NOT an "a" or a "c" or an "f".
+
+
+SELECT * FROM Customers
+WHERE City LIKE '[!acf]%';
+
+
+
+The SQL BETWEEN Operator
+
+BETWEEN Syntax
+SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+
+
+SQL aliases are used to give a table, or a column in a table, a temporary name.
+
+Aliases are often used to make column names more readable.
+
+SELECT column_name AS alias_name
+FROM table_name;
