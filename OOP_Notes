@@ -1,0 +1,151 @@
+The object-oriented programming is basically a computer programming design philosophy or methodology that organizes/ models software design around data, or objects rather than functions and logic.
+
+
+Uses Class and Objects
+
+	Class: A class in C++ is the building block that leads to Object-Oriented programming.
+	It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. 
+	A C++ class is like a blueprint for an object.
+
+	An Object is an instance of a Class. 
+	When a class is defined, no memory is allocated but when it is instantiated (i.e. an object is created) memory is allocated.
+
+
+
+	Declaring Class
+
+		class Geek
+		{
+			Access Specifier // Can be private, public or protected
+			Data members // variables to be used
+			Member Functions // fun(),print() etc
+		}
+
+		class Geeks
+		{
+		    public:
+		    string geekname;
+		    void printname()
+		    {
+		       cout << "Geekname is: " << geekname;
+		    }
+		};
+
+		An object is an instance of class.
+
+		Declaring Objects: When a class is defined, only the specification for the object is defined; no memory or storage is allocated. To use the data and access functions defined in the class, you need to create objects.
+
+
+		Syntax:
+			Geek obj1;
+
+
+
+
+Structure is a user defined data type.
+It is similar to classes in C++ difference is that struct has public acess and classes are private by default
+(Access for structure and classes both can be modified)
+
+
+
+The major concepts that we have discussed above are known as pillars of OOPs. There are four pillars on which OOP rests.
+
+Abstraction
+Encapsulation
+Inheritance
+Polymorphism
+
+
+
+C++ Constructor :
+	It is a special method which is invoked automatically at the time of object creation. 
+	It is used to initialize the data members of new object generally. 
+	The constructor in C++ has the same name as class or structure.
+
+	There are 2 types of constructors.
+
+		1) Default Constructor (without any arguments)
+		2) Parameterized Constructor (with arguments)
+
+	class Employee 
+	{
+	   public:
+	       int id;
+	       string name;
+	       float salary;
+	       Employee(int i, string n, float s)  
+	       {  
+	       		id = i;  
+	            name = n;  
+	            salary = s;
+	        }  
+			void display()  
+			{  
+			    cout<<id<<"  "<<name<<"  "<<salary<<endl;  
+			}  
+			Employee()
+			{
+				cout<<"Default Constructor"<<"\n";
+			}
+	};
+	int main(void) {
+	    Employee e1 =Employee(101, "Sonoo", 890000); //creating an object of Employee 
+	    Employee e2=Employee(102, "Nakul", 59000); 
+	    Employee e3;
+	    e1.display();  
+	    e2.display();  
+	    return 0;
+	}
+
+
+C++ Destructor
+
+	Destructor is an instance member function which is invoked automatically whenever an object is going to be destroyed. Meaning, a destructor is the last function that is going to be called before an object is destroyed.
+	Destructor is also a special member function like constructor. Destructor destroys the class objects created by constructor. 
+	Destructor has the same name as their class name preceded by a tilde (~) symbol.
+
+
+
+Encapsulation :
+
+		Encapsulating Data Methods along with variables
+		Showing only relevant data to the accessed members.
+
+In object-oriented computer programming (OOP) languages, the notion of encapsulation (or OOP Encapsulation) refers to the bundling of data, along with the methods that operate on that data, into a single unit. Many programming languages use encapsulation frequently in the form of classes. A class is a program-code-template that allows developers to create an object that has both variables (data) and behaviors (functions or methods). A class is an example of encapsulation in computer science in that it consists of data and methods that have been bundled into a single unit.
+
+
+classes are being implemented or stored. All that users will know is that values are being passed and initialized.
+
+More Flexibility: Enables you to set variables as red or write-only. Examples include: setName(), setAge() or to set variables as write-only then you only need to omit the get methods like getName(), getAge() etc.
+
+Easy to Reuse: With encapsulation it's easy to change and adapt to new requirements.
+
+
+
+Inheritance:
+	
+	The capability of a class to derive properties and characteristics from another class is called Inheritance.
+
+	Inheritance is a feature or a process in which, new classes are created from the existing classes. The new class created is called “derived class” or “child class” and the existing class is known as the “base class” or “parent class”. The derived class now is said to be inherited from the base class.
+
+	When we say derived class inherits the base class, it means, the derived class inherits all the properties of the base class, without changing the properties of base class and may add new features to its own. 
+
+
+	Sub Class: The class that inherits properties from another class is called Subclass or Derived Class. 
+	Super Class: The class whose properties are inherited by a subclass is called Base Class or Superclass. 
+
+
+	2 Possible Options:
+
+	When a base class is privately inherited by the derived class, public members of the base class becomes the private members of the derived class and therefore, the public members of the base class can only be accessed by the member functions of the derived class. They are inaccessible to the objects of the derived class.
+
+	When a base class is privately inherited by the derived class, public members of the base class becomes the private members of the derived class and therefore, the public members of the base class can only be accessed by the member functions of the derived class. They are inaccessible to the objects of the derived class.
+
+
+
+
+	https://www.geeksforgeeks.org/polymorphism-in-c/
+
+
+	https://www.geeksforgeeks.org/abstraction-in-c/
+	
