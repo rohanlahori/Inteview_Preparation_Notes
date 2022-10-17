@@ -1,6 +1,28 @@
 The object-oriented programming is basically a computer programming design philosophy or methodology that organizes/ models software design around data, or objects rather than functions and logic.
 
 
+
+
+
+OOP focuses on the objects that developers want to manipulate rather than the logic required to manipulate them.
+This approach to programming is well-suited for programs that are large, complex and actively updated or maintained.
+This includes programs for manufacturing and design, as well as mobile applications;
+for example, OOP can be used for manufacturing system simulation software.
+
+
+
+
+What is the structure of object-oriented programming?
+The structure, or building blocks, of object-oriented programming include the following:
+
+Classes are user-defined data types that act as the blueprint for individual objects, attributes and methods.
+
+Objects are instances of a class created with specifically defined data. Objects can correspond to real-world objects or an abstract entity. When class is defined initially, the description is the only object that is defined.
+
+Methods are functions that are defined inside a class that describe the behaviors of an object. Each method contained in class definitions starts with a reference to an instance object. Additionally, the subroutines contained in an object are called instance methods. Programmers use methods for reusability or keeping functionality encapsulated inside one object at a time.
+
+Attributes are defined in the class template and represent the state of an object. Objects will have data stored in the attributes field. Class attributes belong to the class itself.
+
 Uses Class and Objects
 
 	Class: A class in C++ is the building block that leads to Object-Oriented programming.
@@ -67,6 +89,7 @@ C++ Constructor :
 		1) Default Constructor (without any arguments)
 		2) Parameterized Constructor (with arguments)
 
+
 	class Employee 
 	{
 	   public:
@@ -103,6 +126,8 @@ C++ Destructor
 	Destructor is an instance member function which is invoked automatically whenever an object is going to be destroyed. Meaning, a destructor is the last function that is going to be called before an object is destroyed.
 	Destructor is also a special member function like constructor. Destructor destroys the class objects created by constructor. 
 	Destructor has the same name as their class name preceded by a tilde (~) symbol.
+
+
 
 
 
@@ -148,4 +173,8 @@ Inheritance:
 
 
 	https://www.geeksforgeeks.org/abstraction-in-c/
+
+
+
+	Read more about friend function and virtual functions in C++
 	
