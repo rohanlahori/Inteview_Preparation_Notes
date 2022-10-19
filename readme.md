@@ -16,3 +16,5 @@ InterProcess Communication
 Deadlock
 
 Types of Kernels
+
+Convoy Effect
