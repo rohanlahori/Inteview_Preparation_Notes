@@ -18,3 +18,7 @@ Deadlock
 Types of Kernels
 
 Convoy Effect
+
+Cpu Scheduling Algorithms
+
+Types of Cpu Scheduling
