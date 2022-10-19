@@ -1,13 +1,11 @@
-Stack:
 
-Next Greater Element
- Start Traversing from end of the array and find the observation from it.
-  
-  Pseudo Code:
-  
-   while(s.top()<=cur)
-   {
-   s.pop();
-   }
-   cout<<s.top();
-   s.push(cur)
+Operating Systemm Important Topics:
+
+What is Os and it's need
+Types of OS
+Components of OS
+Context Switching 
+System Calls
+InterProcess Communication
+Deadlock
+Types of Kernels
