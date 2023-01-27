@@ -1,0 +1,40 @@
+Graph Revision:
+
+
+Biparite Graph : If you can color the whole graph with 2 colors then it is a biparite graph.
+
+
+Number of Islands: Do bfs/dfs from all the unvisited 1's
+
+
+Detect a cycle in undirected graph: simple maintain a parent vector to detect the cycle in the graph.
+
+Detect a cycle in directed graph: (Most Important)
+
+	The parent vector approach won't work here.
+	Use Path visited vector.
+	Check: https://www.youtube.com/watch?v=9twcmtQj4DU&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=12&t=550s
+
+	BFS Approach is using Kahn's Algorithm:
+		find the topo sort of the graph.
+		if finding topo sort is possible, it proves that there is no cycle in the graph.
+		(As topo sort is possible only for directed asyclic graphs (DAG))
+
+	Topo Sort:
+		If there is an edge between u->v, u comes before v in the ordering of the traversal.
+
+		DFS:
+			Start with any of the node in the graph, keep doing dfs and when it's done.
+			add the node in the stack.
+
+			Empty the stack it would be the topo sort of the graph.
+			(In this approach it should be sure that graph is DAG.)
+
+		BFS: (Kahn's Algorithm)
+			Put all the nodes having indegree 0 in the queue.
+			Start taking nodes from the queue and add it into ans vector, subtract the indegree of all the adjacent nodes.
+			If indegree of any node becomes 0 add it in the queue.
+
+			At the end, if the size of the output vector is N then topo sort is possible otherwise the graph would be having cycle.
+			
+
