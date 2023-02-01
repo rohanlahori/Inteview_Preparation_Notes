@@ -1,0 +1,95 @@
+Git : Version Control System.
+
+Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help software teams manage changes to source code over time.
+Easy to track the code which will be useful in situation of failure.
+
+Types: Centralized and Decentralized
+Git : Free, open source, fast and scalable
+
+Use of git is possible using GUI and Command Line.
+
+
+(Any git command -h denotes the help)
+Config Commands in Git:
+	Name: git config --global user.name ""
+	Email: git config --global user.email 
+	Edit Config: git config --global -e
+	(opens editor file in vs code allows to edit configuratin settings)
+	help: git config --help and git config --h
+
+
+
+
+Staging Area:
+	These files are also referred to as "untracked files." Staging area is files that are going to be a part of the next commit, which lets git know what changes in the file are going to occur for the next commit.
+	Allows to view changes before commiting the changes.
+
+
+
+Initializing a repository
+git init 
+
+Staging files
+git add file1.js # Stages a single file
+git add file1.js file2.js # Stages multiple files
+git add *.js # Stages with a pattern
+git add . # Stages the current directory and all its content 
+
+To skip the staging area part: git commit -am "fixed the bug"
+(am: all modified files)
+
+
+Remove file:
+git rm file2.txt
+
+Commit
+git commit -m "Commit the code"
+
+(Git stores all the commits with time who commited and the whole copy of the code which can be used when we have a bug or we have to go back to a particular commit.)
+All the commits in the git are stored:
+
+	ID
+	Message
+	Date/time
+	Author
+	Complete snapshot
+
+
+Gitignore:
+add files to gitignore : echo node_module/ > .gitignore
+
+
+Remove files from stagging area:
+git rm --cached -r file3.js
+
+Git status check:
+git status -s : tells about the status of each file in the stagging area which is not yet committed
+
+
+
+git difftool : Compare diffence of commited and stagged changes.
+
+
+Viewing the history:
+	git log: commit history
+	git log --oneline : comment while comitting
+	git log --oneline --reverse: reverse order (one to last)
+
+Viewing a commit:
+	git show (commit_id)
+	git show HEAD~i (i denotes the number of commits behind we have to go)
+	(Above command only shows the differences not the whole commit)
+
+	Whole commit :
+		git ls-tree HEAD~i
+
+
+Unstaging files:
+
+git restore --staged
+
+
+Restore to back commit:
+	git restore --source=HEAD~1 file1.js
+
+make a new branch: git branch xyz
