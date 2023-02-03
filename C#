@@ -1,0 +1,93 @@
+Revision Sheet for C#
+
+
+
+All the functions having brackets () at the end are methods, else are properties
+Eg: toUpper() is method, .Exists is a property
+
+String methods
+length : s.Length
+uppercase: toUpper()
+lowercase: toLower()
+check substring: s.contains(s1)
+find index of i: s.IndexOf("rohan")
+
+find a substring part: s.SubString(x,len) how much characters from x  , s.SubString(x) (all characters after x)
+
+Math functions
+
+Math.Abs(-x) : +x
+Math.Pow(x,y): x^y
+Math.Sqrt(x): root(x)
+Math.Max(x,y)
+Math.Min(x,y)
+
+Take input:
+Use Console.ReadLine()
+int x = Console.ReadLine()
+Output: Console.WriteLine()
+Line adds a new line so if we don't want to go to new line don't use Line
+Console.Write("Enter a number");
+int x=Console.ReadLine();
+
+
+Type Coversion:
+int num=Convert.ToInt32("x") (toInt64, toDouble are the other options )
+double num1=Convert.ToDouble("x");
+
+
+User Input + Type Coversion
+int x=Convert.ToInt32(Console.ReadLine());
+
+
+
+Arrays:
+1D
+int []a;
+int []a= new int[n];
+
+2D:
+int[] colors=new int[1,2,3];
+int[] colors=new int[1][2][3];
+
+
+Methods:
+// Array.method() all these methods are a part of Array Class
+    Length(arr)
+    IndexOf(arr,x)
+    Clear(arr,x,y)
+    Copy(arr,arr1,x,y) || Copy(arr,arr1,x)
+    Sort()
+    Reverse()
+
+
+List : Dynamic Size
+var numbers = new List<int>();
+List<int> ls=new List<int>();
+Methods:
+    Add()
+    AddRange()
+    Remove()
+    RemoveAt()
+    IndexOf()
+    LastIndexOf(i)
+    Contains() 
+    Count (alternate of length)
+
+// forEach 
+forEach(var i in nums)
+{
+    System.Console.WriteLine(i);
+}
+
+Data and Time Methods : https://www.javatpoint.com/datetime-in-c-sharp
+    Date.Now
+    Date.Today
+
+
+File methods
+Copy file x into y: File.Copy(x,y);
+Delte a file :File.Delete(x);
+check existence:File.Exists(x)
+var x=File.ReadAllText(x);
+(x and y are the path of the file)
